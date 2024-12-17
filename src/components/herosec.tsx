@@ -6,11 +6,11 @@ export default function HeroSection() {
     <div className="relative w-full h-[716px] overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/HeroSectionImage.png" 
+        src="/HeroSectionImage.png"
         alt="Main Hero Image"
         layout="fill" // Ensures the image covers the entire container
         objectFit="cover" // Maintains aspect ratio and fills the container
-        objectPosition="top" 
+        objectPosition="top"
         className="z-0"
       />
 
@@ -29,7 +29,7 @@ export default function HeroSection() {
           </h4>
           <br />
           <button className="w-full sm:w-auto bg-[#2DC071] py-[8px] sm:py-[10px] px-[20px] sm:px-[30px] rounded-[5px] gap-[10px] text-white font-montserrat">
-          Shop Now
+            Shop Now
           </button>
 
 

@@ -31,7 +31,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="mt-4 text-center space-y-2">
         <h3 className="text-[#252B42] text-[18px] font-bold">{product.name}</h3>
         <p className="text-[#737373] text-[14px]">{product.department}</p>
-        
+
         {/* Prices */}
         <div className="flex items-center justify-center gap-2 mt-2">
           <p className="text-[#BDBDBD] text-[16px] line-through">

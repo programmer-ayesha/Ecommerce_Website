@@ -80,7 +80,7 @@ const EditorsPics = () => {
       <div className="sm:hidden flex flex-col items-center justify-center gap-6 mt-6">
         {/* Men  */}
         <div className="relative w-[90%] sm:w-full ml-15">
-        
+
           <Image src={"/image1.png"} alt="men" width={400} height={500} />
           <div className="absolute bottom-4 left-4 w-[170px] h-[48px] bg-white flex items-center justify-center">
             <span className="text-[#252B42] font-bold text-lg">MEN</span>
@@ -112,11 +112,11 @@ const EditorsPics = () => {
               <span className="text-[#252B42] font-bold text-lg">KIDS</span>
             </div>
           </div>
-  </div>
-</div>
-
+        </div>
       </div>
-    
+
+    </div>
+
   );
 };
 

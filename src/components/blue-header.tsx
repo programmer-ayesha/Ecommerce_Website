@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+
 import Link from "next/link";
 import { useState } from "react";
 import { FiPhone, FiMail, FiInstagram, FiYoutube, FiFacebook, FiTwitter, FiSearch, FiShoppingCart, FiHeart, FiChevronDown, FiMenu, FiX } from "react-icons/fi";
@@ -58,7 +60,7 @@ const Header = () => {
           <nav className="hidden md:flex">
             <ul className="flex gap-8 text-sm font-medium text-[#737373] relative">
               <NavLink href="/" text="Home" />
-              <NavLink href="/product" text="Shop" isDropdown />
+              <NavLink href="/shop" text="Shop" isDropdown />
               <NavLink href="/about" text="About" />
               <NavLink href="#blog" text="Blog" />
               <NavLink href="/contact" text="Contact" />
@@ -68,6 +70,7 @@ const Header = () => {
 
           {/* Action Icons for Desktop */}
           <div className="hidden md:flex items-center gap-6 text-[#23A6F0]">
+          <Image src="/login.svg" alt="Login" width={16} height={16} />
             <button className="text-sm font-medium">Login/Register</button>
             <FiSearch className="text-lg cursor-pointer" />
             <FiShoppingCart className="text-lg cursor-pointer" />
@@ -77,38 +80,38 @@ const Header = () => {
 
         {/* Mobile Menu */}
 
-<div
-  className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-white shadow-md transition-all duration-300 ease-in-out`}
->
-  <ul className="flex flex-col gap-6 p-4 text-[20px] text-[#737373] text-center">
-    <li>
-      <Link href="/" className="hover:text-[#23A6F0] transition-all">
-        Home
-      </Link>
-    </li>
-    <li>
-      <Link href="/product" className="hover:text-[#23A6F0] transition-all">
-        Product
-      </Link>
-    </li>
-    <li>
-      <Link
-        href="/about"
-        className="hover:text-[#23A6F0] transition-all"
-      >
-        Pricing
-      </Link>
-    </li>
-    <li>
-      <Link
-        href="/contact"
-        className="hover:text-[#23A6F0] transition-all"
-      >
-        Contact
-      </Link>
-    </li>
-  </ul>
-</div>
+        <div
+          className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-white shadow-md transition-all duration-300 ease-in-out`}
+        >
+          <ul className="flex flex-col gap-6 p-4 text-[20px] text-[#737373] text-center">
+            <li>
+              <Link href="/" className="hover:text-[#23A6F0] transition-all">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/product" className="hover:text-[#23A6F0] transition-all">
+                Product
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="hover:text-[#23A6F0] transition-all"
+              >
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="hover:text-[#23A6F0] transition-all"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
 
       </div>
     </div>
@@ -126,3 +129,5 @@ const NavLink = ({ href, text, isDropdown = false }: { href: string; text: strin
 );
 
 export default Header;
+
+

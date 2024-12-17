@@ -1,8 +1,10 @@
 import Image from "next/image";
-import Header from "@/components/header";
+import Header from "@/components/blue-header";
 import Hero from "@/components/herosec";
 import Editors from "@/components/editorspick";
-import FeatureProduct from "@/components/best_seller_product";
+import BestSellerProduct from "@/components/best_seller_product";
+import FeatureProducts from "@/components/feature-products";
+import Footer from "@/components/footer"
 
 
 
@@ -13,7 +15,9 @@ export default function Home() {
     <Header />
     <Hero/>
     <Editors/>
-    <FeatureProduct/>
+    <BestSellerProduct/>
+    <FeatureProducts/>
+    <Footer/>
     </>
   );
 }
