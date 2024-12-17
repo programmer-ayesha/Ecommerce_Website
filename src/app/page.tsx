@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "@/components/blue-header";
 import Hero from "@/components/herosec";
 import Editors from "@/components/editorspick";

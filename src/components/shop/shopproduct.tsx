@@ -1,14 +1,5 @@
 import Image from "next/image";
 
-interface Product {
-    id: number;
-    image: string;
-    title: string;
-    category: string;
-    price: string;
-    originalPrice: string;
-    colors: string[];
-}
 const products2 = [
     {
         id: 1,
